@@ -1,5 +1,4 @@
 void main() {
-
   var sayilar=<int>[];
 
   sayilar.add(10);
@@ -17,11 +16,19 @@ void main() {
     int sonuc= s%2;
 
     if (sonuc==0) {
-      print("$s sayısı çifttir");
+      ciftler.add(s);
     }
     if (sonuc==1) {
-      print("$s sayısı tektir");
+      tekler.add(s);
     }
+  }
+  print("***Tekler***");
+  for(var tek in tekler){
+    print(tek);
+  }
+  print("***Çiftler***");
+  for(var cift in ciftler){
+    print(cift);
   }
 
 }
